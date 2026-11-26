@@ -48,7 +48,11 @@ Built with Muse + the Flagsmith CLI and REST API."
 
 ## Recording checklist
 
-- [ ] Warehouse connected before recording (first-event processing is slow)
-- [ ] Results confirmed live in the dashboard before pressing record
-- [ ] Two browser profiles ready for the two button variants
-- [ ] Terminal font large enough to read on video
+- [x] Warehouse connected before recording (first-event processing is slow)
+- [x] Results confirmed live in the dashboard before pressing record
+- [x] Two browser profiles ready for the two button variants — demo page
+      accepts `?id=<identifier>`: `?id=probe-02` renders control ("Buy
+      now"), `?id=probe-01` renders the variant ("Get yours today")
+- [x] Terminal font large enough to read on video
+- [x] Live numbers (27 Nov 2026 ~06:31 WIB): control 157 exp / 12 purch,
+      variant 145 exp / 19 purch, lift +71%, chance to win 88.2%

@@ -19,6 +19,16 @@
   function setStatus(text) { if (status) status.textContent = text; }
 
   function visitorId() {
+    // Deep-link for the demo video / judges: ?id=<identifier> pins the
+    // visitor, so a known identifier always renders the same variant
+    // (the flag still evaluates live via the SDK — nothing is faked).
+    // probe-02 buckets to control, probe-01 to get_yours (verified live).
+    var params = new URLSearchParams(window.location.search);
+    var forced = params.get('id');
+    if (forced) {
+      localStorage.setItem('flagpilot-visitor-id', forced);
+      return forced;
+    }
     var key = 'flagpilot-visitor-id';
     var id = localStorage.getItem(key);
     if (!id) {
