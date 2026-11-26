@@ -44,9 +44,15 @@ start experiments, which is the entire point of this agent.
   (supplied in chat, used transiently for the live build, never stored in
   the repo); typing `y` at every approval gate in the demo video; the
   submission itself.
-- **The demo video** shows the real CLI output, the real dashboard and
-  the real demo page — no mockups. The traffic is simulated (300
-  synthetic shoppers, seeded RNG) and the video says so.
+- **The demo video** (2:00, https://www.youtube.com/watch?v=9Dc3sPEo2h0,
+  published Public on Abang Oyen TV 27 Nov 2026) is
+  built from the real outputs, not from a screen recorder — this VM has
+  no display, so the terminal frames are the agent's real dry-run /
+  traffic output rendered verbatim, the demo-shop frames replicate
+  `demo/index.html` pixel-for-pixel with the real variant copy, and the
+  results frame carries the real warehouse numbers from experiment 836.
+  The traffic is simulated (300 synthetic shoppers, seeded RNG) and the
+  video says so. Nothing in the video is a mocked result.
 
 ## LLM vs template path
 

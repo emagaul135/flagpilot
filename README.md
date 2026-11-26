@@ -11,6 +11,11 @@ shows you exactly what it is about to change, and only writes anything
 after you say yes. Ten minutes later you have a running experiment with
 live results.
 
+**Demo video (2:00):** https://www.youtube.com/watch?v=9Dc3sPEo2h0
+· **Live demo shop:** https://emagaul135.github.io/flagpilot/demo/
+· **Live experiment:** flag `checkout_button`, "Get yours today" winning
+at 88.2% chance to win (300 shoppers, 27 Nov 2026).
+
 ## What it does
 
 ```bash
