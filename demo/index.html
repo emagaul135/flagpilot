@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ShopDemo — FlagPilot Tote Bag</title>
+  <style>
+    body { font-family: system-ui, sans-serif; max-width: 560px; margin: 3rem auto; padding: 0 1rem; }
+    .product { border: 1px solid #ddd; border-radius: 12px; padding: 1.5rem; text-align: center; }
+    .price { font-size: 1.5rem; font-weight: 700; margin: .5rem 0 1.5rem; }
+    #checkout-btn { font-size: 1.1rem; padding: .8rem 2rem; border: 0; border-radius: 8px;
+                    background: #111; color: #fff; cursor: pointer; }
+    #checkout-btn:hover { background: #333; }
+    #status { margin-top: 1rem; color: #555; min-height: 1.2em; }
+    .note { margin-top: 2rem; font-size: .85rem; color: #888; }
+  </style>
+  <!-- Flagsmith JS SDK. VERIFY AT BUILD (Day 1): the exact bundle path
+       and version against the JavaScript tab of the "Run an Experiment"
+       doc. The wiring in app.js (init / identify / getExperimentFlag /
+       trackEvent / flushEvents) follows that doc. -->
+  <script src="https://cdn.jsdelivr.net/npm/flagsmith@12.4.0/lib/flagsmith.min.js"></script>
+</head>
+<body>
+  <div class="product">
+    <h1>FlagPilot Tote Bag</h1>
+    <p>One sturdy tote. Zero decisions — except the button copy, which is
+       currently being A/B tested.</p>
+    <div class="price">$25</div>
+    <button id="checkout-btn" type="button">Buy now</button>
+    <div id="status"></div>
+  </div>
+  <p class="note">
+    ShopDemo for FlagPilot (Toggle Wars, Track 02). The button copy comes
+    from the Flagsmith flag <code>checkout_button</code>; clicking it tracks
+    a <code>purchase</code> event. Config: <code>flagpilot-config.json</code>.
+  </p>
+  <script src="app.js"></script>
+</body>
+</html>
